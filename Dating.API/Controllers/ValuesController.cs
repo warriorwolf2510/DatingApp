@@ -22,7 +22,7 @@ namespace Dating.API.Controllers
             _context = context;
         }
 
-        // GET api/values
+        [AllowAnonymous]
         [HttpGet]
         //public ActionResult<IEnumerable<string>> Get()
        
