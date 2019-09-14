@@ -21,6 +21,7 @@ namespace Dating.API.Helpers
              .ForMember(dest => dest.Age, opt => 
                 opt.MapFrom(src => src.DateOfBirth.CalculateAge()));
             CreateMap<Photo, PhotosForDetailedDto>();
+            CreateMap<UserForUpdateDto, User>(); //mapping dto with actual user object
         }
 
         private void ForMember(Func<object, object> p1, object p2)

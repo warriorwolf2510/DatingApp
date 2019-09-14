@@ -35,7 +35,7 @@ namespace Dating.API.Data
             return users;
         }
 
-        public async Task<bool> GetSaveAll()
+        public async Task<bool> SaveAll()
         {
             return await _context.SaveChangesAsync() > 0;
         }
